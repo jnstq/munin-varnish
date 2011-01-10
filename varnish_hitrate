@@ -2,7 +2,7 @@
 # anders@aftenposten.no, 2007-09-19
 # Shows the rate of requests (per second) for Varnish
 
-PATH="$PATH:/usr/local/bin"
+PATH="$PATH:/opt/varnish/bin:/usr/local/bin"
 export PATH
 
 vversion=`varnishstat -V 2>&1 | egrep "^varnishstat" | perl -p -e "s@varnishstat\s*@@;s@\(@@;s@\)@@;s@varnish-@@"`
