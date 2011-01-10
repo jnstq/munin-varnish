@@ -15,7 +15,7 @@ $mydat = "/var/tmp/varnish_cachehitratio.dat";
 #$mylog = "/var/log/varnish_cachehitratio.log";
 
 %stat = ();
-$ENV{PATH} = "/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin";
+$ENV{PATH} = "/opt/varnish/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin";
 open(VV, "varnishstat -V 2>&1 |");
 while (<VV>) {
 	if (/^varnishstat/) { $vversion = $_; }

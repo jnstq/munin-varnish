@@ -2,7 +2,7 @@
 # anders@aftenposten.no, 2007-05-08
 # Shows the total number of objects in Varnish cache
 
-PATH="$PATH:/usr/local/bin"
+PATH="$PATH:/opt/varnish/bin:/usr/local/bin"
 export PATH
 
 vversion=`varnishstat -V 2>&1 | egrep "^varnishstat" | perl -p -e "s@varnishstat\s*@@;s@\(@@;s@\)@@;s@varnish-@@"`
